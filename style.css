@@ -3,7 +3,7 @@ h1 {
     font-style: normal;
     font-weight: 400;
     font-size: 64px;
-    line-height: 83px;
+    line-height: 100px;
     color: #000000;
 }
 
@@ -12,7 +12,7 @@ h2 {
     font-style: normal;
     font-weight: 400;
     font-size: 48px;
-    line-height: 62px;
+    line-height: 1px;
     color: #000000;
 }
 
@@ -21,7 +21,7 @@ h3 {
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
-    line-height: 52px;
+    line-height: 1px;
     color: #000000;
 }
 
@@ -30,7 +30,7 @@ h4 {
     font-style: normal;
     font-weight: 400;
     font-size: 36px;
-    line-height: 47px;
+    line-height: 1px;
     color: #000000;
 }
 
@@ -83,15 +83,9 @@ a:active{
     color:#6B9080;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
 @media only screen and (min-width:701px)
 {
-    ul {
+    .navigation {
         list-style-type: none;
         margin: 0;
         padding: 0;
@@ -99,18 +93,18 @@ ul {
         background-color: #CCE3DE;
       }
       
-      li {
+      .nav {
         float: left;
       }
       
-      li a {
+      .nav a {
         display: block;
         color: white;
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
       }
-      li a:hover {
+      .nav a:hover {
         background-color: #6B9080;
       }
 
@@ -127,17 +121,183 @@ ul {
 
     .one {
         grid-column:1/2;
-        grid-row: 1/span 2;
+        grid-row: 1/span 3;
     }
 
     .two {
         grid-column: 2/2;
-        grid-row: 1/2;
+        grid-row: 1/3;
     }
 
     .three {
         grid-column: 2/2;
+        grid-row: 2/3;
+        padding-top: 10em;
+    }
+
+    .four {
+        grid-column: 2/2;
+        grid-row: 3/3;
+    }
+
+    .grid-container2 {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .first {
+        grid-column: 2/2;
+        grid-row: 3/span 6;
+        padding: 100px;
+    }
+
+    .second {
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+
+    .third {
+        grid-column: 1/2;
+        grid-row: 3/span 6;
+    }
+
+    .fourth {
+        grid-column: 1/2;
+        grid-row: 5/span 8;
+    }
+
+    .fifth {
+        grid-column: 1/2;
+        grid-row: 7/span 10;
+    }
+
+    .center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grid-container3 {
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .uno {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .dos {
+        grid-column: 2/2;
+        grid-row: 1/2;
+    }
+
+    .tres {
+        grid-column: 1/2;
         grid-row: 2/2;
+    }
+
+    .quatro {
+        grid-column: 2/2;
+        grid-row: 2/2;
+    }
+
+    .no-bullets {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; 
+    }
+
+    .grid-container4 {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .motivated1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+
+    .motivated2 {
+        grid-column: 1/3;
+        grid-row: 2/2;
+    }
+
+    .positive1 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .positive2 {
+        grid-column: 2/3;
+        grid-row: 2/2;
+    }
+
+    .passionate1 {
+        grid-column: 3/3;
+        grid-row: 1/2;
+    }
+
+    .passionate2 {
+        grid-column: 3/3;
+        grid-row: 2/2;
+    }
+
+    .grid-container5 {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .work1 {
+        grid-column: 1/2;
+        grid-row: 1/span 2;
+    }
+
+    .work1a {
+        grid-column: 2/2;
+        grid-row: 1/6;
+    }
+
+    .work1b {
+        grid-column: 2/2;
+        grid-row: 2/6;
+    }
+
+    .work2 {
+        grid-column: 2/2;
+        grid-row: 3/ span 4;
+    }
+
+    .work2a {
+        grid-column: 1/2;
+        grid-row: 3/6;
+    }
+
+    .work2b {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+
+    .work3 {
+        grid-column: 1/2;
+        grid-row: 5/span 6;
+    }
+
+    .work3a {
+        grid-column: 2/2;
+        grid-row: 5/6;
+    }
+
+    .work3b {
+        grid-column: 2/2;
+        grid-row: 6/6;
     }
 }
 
