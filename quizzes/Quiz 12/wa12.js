@@ -53,3 +53,10 @@ function updateOutput() {
     output.textContent = phone_content.value;
     alert(phone_content.value);
 } */
+
+var slider = document.getElementById("myRange");
+var sliderSubmit = document.querySelector("slider-submit-button").addEventListener('click',update);
+var sliderOutput = document.getElementById("slider-output");
+function update() {
+    sliderOutput.textContent = slider.value;
+}
