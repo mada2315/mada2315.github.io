@@ -1,0 +1,35 @@
+.phone-number {
+    display: inline-block;
+    width: 70px;
+    text-align: center;
+}
+
+p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+
+.button{
+    background-color:#6B9080;
+    color:#CCE3DE;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Inter';
+}
+
+.button:visited{
+    background-color:#6B9080;
+    color:#CCE3DE;
+}
+
+.button:hover{
+    background-color:#CCE3DE;
+    color:#6B9080;
+}
