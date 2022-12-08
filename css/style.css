@@ -120,6 +120,40 @@ ul {
     background-color: rgba(0,0,0,0);
   }
 
+.container {
+    width: 100;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+}
+
+form button{
+    padding: 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+}
+
 @media only screen and (min-width:701px)
 {
     .navigation {
@@ -350,6 +384,9 @@ ul {
 
 @media only screen and (max-width:700px) 
 {
+    .navigation {
+        list-style-type: none;
+    }
     .dropbtn {
         background-color: #CCE3DE;
         color: black;
